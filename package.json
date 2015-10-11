@@ -1,0 +1,17 @@
+{
+  "name": "make_docs",
+  "version": "1.0.0",
+  "description": "make HTML files from MD files, recursively",
+  "main": "make_docs.js",
+  "scripts": {
+    "test": "node make_docs.js"
+  },
+  "keywords": [
+    "markdown",
+    "html"
+  ],
+  "author": "Pavel Vasev",
+  "license": "MIT",
+  "dependencies" :
+    { "marked" : "latest" }  
+}
