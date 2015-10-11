@@ -6,15 +6,20 @@
   "preferGlobal": "true",
   "bin": {
     "make_docs": "./bin/make_docs"
-   },  
+  },
   "scripts": {
     "test": "node make_docs.js"
   },
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/pavelvasev/make_docs"
+  },
   "keywords": [
     "markdown",
-    "html"
+    "html",
+    "directory"
   ],
-  "author": "Pavel Vasev",
+  "author": "Pavel Vasev <pavel.vasev@gmail.com> (https://github.com/pavelvasev/)",
   "license": "MIT",
   "dependencies" :
     { "marked" : "latest" }  
