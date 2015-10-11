@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "make HTML files from MD files, recursively",
   "main": "make_docs.js",
+  "preferGlobal": "true",
+  "bin": {
+    "make_docs": "./bin/make_docs"
+   },  
   "scripts": {
     "test": "node make_docs.js"
   },
