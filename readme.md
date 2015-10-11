@@ -1,6 +1,6 @@
-# Recursive MD->HTML generator
+# make_docs
 
-Generates HTML file for every MD file found in directory tree.
+> Generates HTML file for every MD file found in directory tree.
 
 ## Install
 
