@@ -1,6 +1,6 @@
 {
   "name": "make_docs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Convert all markdown files in a directory tree",
   "main": "make_docs.js",
   "preferGlobal": "true",
