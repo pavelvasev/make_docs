@@ -10,6 +10,7 @@ var path = require('path');
 var marked = require('marked');
 //var querystring = require('querystring');
 var year = new Date().getFullYear();
+var output_file_counter = 0;
 
 var toc, toclevel;
 
@@ -104,6 +105,7 @@ function make( filepath )
                   .replace( /&lt;!--[\s\S]*?--&gt;/g,"");
   
   fs.writeFileSync( filepath+".html", html );
+  output_file_counter = output_file_counter+1;
 };
 
 // http://stackoverflow.com/questions/5827612/node-js-fs-readdir-recursive-directory-search
@@ -130,3 +132,4 @@ var walk = function(dir) {
 };
 
 walk( process.cwd() );
+console.log("Number of files generated:",output_file_counter);
