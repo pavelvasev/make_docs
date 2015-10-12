@@ -9,6 +9,7 @@ var fs = require('fs');
 var path = require('path');
 var marked = require('marked');
 //var querystring = require('querystring');
+var year = new Date().getFullYear();
 
 var toc, toclevel;
 
@@ -96,7 +97,11 @@ function make( filepath )
   bn = path.basename( filepath );
   body += "<div style='float:right;'><small><a href='"+bn+"'>"+bn+"</a></small></div>";
   
-  var html = templ.replace( /\$body\$/,body ).replace( /\$toc\$/,toc ).replace( /<!--[\s\S]*?-->/g,"").replace( /&lt;!--[\s\S]*?--&gt;/g,"");
+  var html = templ.replace( /\$body\$/,body )
+                  .replace( /\$toc\$/,toc )
+                  .replace( /\$year\$/,year )
+                  .replace( /<!--[\s\S]*?-->/g,"")
+                  .replace( /&lt;!--[\s\S]*?--&gt;/g,"");
   
   fs.writeFileSync( filepath+".html", html );
 };

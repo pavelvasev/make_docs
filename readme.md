@@ -26,11 +26,12 @@ Alrogythm is:
 1. Find all `**/*.md` files. 
 2. Process each file using `marked` module.
 3. Save result to `$file.md.html`. When saving, use `template.html` as template:
-   * replace $body to body
-   * replace $toc to toc.
+   * replace $body$ to body
+   * replace $toc$ to toc.
+   * replace $year$ to current year.
    
 ## Help
-Please use Github for posting issues and questions.
+Please use Github for posting issues and questions: https://github.com/pavelvasev/make_docs/issues
 
 ## License
 (c) 2015 Pavel Vasev (MIT license)
