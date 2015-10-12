@@ -1,6 +1,6 @@
 {
   "name": "make_docs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "make HTML files from MD files, recursively",
   "main": "make_docs.js",
   "preferGlobal": "true",
@@ -11,8 +11,8 @@
     "test": "node make_docs.js"
   },
   "repository": {
-    "type":"git",
-    "url":"https://github.com/pavelvasev/make_docs"
+    "type": "git",
+    "url": "https://github.com/pavelvasev/make_docs"
   },
   "keywords": [
     "markdown",
@@ -21,6 +21,7 @@
   ],
   "author": "Pavel Vasev <pavel.vasev@gmail.com> (https://github.com/pavelvasev/)",
   "license": "MIT",
-  "dependencies" :
-    { "marked" : "latest" }  
+  "dependencies": {
+    "marked": "latest"
+  }
 }
