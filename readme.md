@@ -25,10 +25,9 @@ The program code is in [make_docs.js](make_docs.js). The output template is in [
 The alrogythm is:
 1. Find all `**/*.md` files. 
 2. Process each file using `marked` module.
-3. Save result to `$file.md.html`. When saving, use `template.html` as template:
-   * replace $body$ with body
-   * replace $toc$ with toc.
-   * replace $year$ with current year.
+3. Save result to `$file.md.html`. When saving, use `template.html` as template and replace:
+
+   `$body$` with body | `$toc$` with toc | `$year$` with current year.
    
 ## Help
 Please use Github for posting issues and questions: https://github.com/pavelvasev/make_docs/issues

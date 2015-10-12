@@ -25,28 +25,25 @@
   <a href="#"> 2015 </a>  
   </div>      
       <h1><a name="make_docs" class="anchor" href="#make_docs"><span class="header-link"></span></a>make_docs</h1><blockquote>
-<p>Generates HTML file for every MD file found in directory tree.</p>
+<p>Generates an HTML file for every MD file found in a directory tree.</p>
 </blockquote>
 <h2><a name="Install" class="anchor" href="#Install"><span class="header-link"></span></a>Install</h2><pre><code class="lang-bash">npm install make_docs
 </code></pre>
 <h2><a name="Usage" class="anchor" href="#Usage"><span class="header-link"></span></a>Usage</h2><pre><code class="lang-bash">make_docs
 </code></pre>
-<p>This will generate html files for all markdown files in current working directory and subdirectories.</p>
+<p>This will generate html files for all markdown files in the current working directory and it&#39;s subdirectories.</p>
 <h2><a name="Features" class="anchor" href="#Features"><span class="header-link"></span></a>Features</h2><ul>
-<li>Html files are placed in the same directory where original md file located. This allows making links from md files to other files without hassle.</li>
-<li>Links to markdown files are converted to html files. <a href="readme.md.html">test link</a></li>
+<li>Html files are placed in the same directory where the original md file is located. This allows making links from md files to other files without hassle.</li>
+<li>Links to markdown files are converted to the links to html files. <a href="readme.md.html">test link</a>.</li>
 <li>Generates Table of Contents (toc).</li>
 </ul>
-<h2><a name="Internals-and-customization" class="anchor" href="#Internals-and-customization"><span class="header-link"></span></a>Internals and customization</h2><p>Program code is in <a href="make_docs.js">make_docs.js</a>. Output template is in <a href="template.html">template.html</a>. Feel free to customize them.</p>
-<p>Alrogythm is:</p>
+<h2><a name="Internals-and-customization" class="anchor" href="#Internals-and-customization"><span class="header-link"></span></a>Internals and customization</h2><p>The program code is in <a href="make_docs.js">make_docs.js</a>. The output template is in <a href="template.html">template.html</a>. Feel free to customize them.</p>
+<p>The alrogythm is:</p>
 <ol>
 <li>Find all <code>**/*.md</code> files. </li>
 <li>Process each file using <code>marked</code> module.</li>
-<li>Save result to <code>$file.md.html</code>. When saving, use <code>template.html</code> as template:<ul>
-<li>replace $body$ to body</li>
-<li>replace $toc$ to toc.</li>
-<li>replace $year$ to current year.</li>
-</ul>
+<li><p>Save result to <code>$file.md.html</code>. When saving, use <code>template.html</code> as template and replace:</p>
+<p><code>$body$</code> with body | <code>$toc$</code> with toc | <code>$year$</code> with current year.</p>
 </li>
 </ol>
 <h2><a name="Help" class="anchor" href="#Help"><span class="header-link"></span></a>Help</h2><p>Please use Github for posting issues and questions: <a href="https://github.com/pavelvasev/make_docs/issues">https://github.com/pavelvasev/make_docs/issues</a></p>
