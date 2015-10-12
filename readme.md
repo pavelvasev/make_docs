@@ -15,6 +15,7 @@ npm install -g make_docs
 make_docs
 ```
 The command will:
+
 1. Find all `**/*.md` files. 
 2. Process each file using `marked` module.
 3. Save result to `$file.md.html`.
